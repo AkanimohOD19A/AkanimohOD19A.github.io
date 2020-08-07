@@ -1,4 +1,4 @@
-console.log("it working")
+/* console.log("it working") */
 
 let theme = localStorage.getItem('theme')
 
@@ -28,8 +28,8 @@ function setTheme(mode){
     if(mode == 'green'){
         document.getElementById('theme-style').href = 'green.css'
     }
-    if(mode == 'purple'){
-        document.getElementById('theme-style').href = 'purple.css'
+    if(mode == 'orange'){
+        document.getElementById('theme-style').href = 'orange.css'
     }
 
     localStorage.setItem('theme', mode)
