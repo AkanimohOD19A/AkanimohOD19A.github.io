@@ -1,5 +1,5 @@
 :root{
-    --mainColor: #eaeaea;
+    --mainColor: #F3EFDC;
     --secondaryColor: #fff;
 
     --borderColor: #c1c1c1;
@@ -12,7 +12,7 @@
     --previewBG: rgba(251, 249, 243, 0.8);
     --previewShadow: #f0ead6;
 
-    --buttonColor: black;
+    --buttonColor: #5C5642;
 }
 
 
@@ -55,6 +55,7 @@ h6 { font-size: 14px;}
 .s1 {
     background-color: var(--mainColor);
     border-bottom: 1px solid var(--borderColor);
+    overflow: auto;
 }
 
 .s2 {
@@ -157,6 +158,11 @@ h6 { font-size: 14px;}
     border: 2px solid var(--borderColor);
 }
 
+#profile_pic:hover {
+    transform: scale(1.05);
+    transition: 400ms ease-in;
+}
+
 #theme-options-wrapper {
     display: flex;
     justify-content: center;
@@ -178,11 +184,11 @@ h6 { font-size: 14px;}
 }
 
 .theme-dot:hover{
-    border-width: 5px; /*transition*/
+    border-width: 5px;
 }
 
 #light-mode{
-    background-color: #fff;
+    background-color: #F3EFDC;
 }
 
 #blue-mode{
@@ -190,11 +196,11 @@ h6 { font-size: 14px;}
 }
 
 #green-mode{
-    background-color: #78846b;
+    background-color: #6A9175;
 }
 
-#purple-mode{
-    background-color: #7e4c74;
+#orange-mode{
+    background-color: #E89A9E;
 }
 
 #setting_note {
@@ -375,8 +381,17 @@ h6 { font-size: 14px;}
 
 
 @media screen and (max-width: 1200px){
+    body{
+        background-color: var(--mainColor);
+        margin-left: 5px;
+    }
+
     .main-container {
         width: 95%;
+    }
+
+    .greeting-wrapper h1 {
+        font-size: 2.5rem;
     }
 
     .right-column {
@@ -425,7 +440,17 @@ h6 { font-size: 14px;}
         ;
     }
 
+    #navigation {
+        font-size: .7rem;
+    }
+
     .right-column {
         justify-content: center;
     }
+
+    html {
+        padding: 0;
+    }
+
+    
 }
