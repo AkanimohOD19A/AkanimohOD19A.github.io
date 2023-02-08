@@ -52,6 +52,11 @@ h4 { font-size: 24px;}
 h5 { font-size: 20px;}
 h6 { font-size: 14px;}
 
+/* Solid border
+hr.solid {
+    border-top: 3px solid #bbb;
+  } */
+
 .s1 {
     background-color: var(--mainColor);
     border-bottom: 1px solid var(--borderColor);
