@@ -568,21 +568,32 @@
 
     <section class="s2">
         <div class="main-container">
-            <h3 style="text-align: center;"> Get in Touch [WIP] </h3>
+            <h3 style="text-align: center;"> Get in Touch </h3>
 
-            <form id="contact-form">
+            <div id="sucess-message" class="alert alert -success">
+                Message sent successfully!
+            </div>
+            <div id="error-message" class ="alert alert-error">
+                Failed to send the message. Please try again.
+            </div>
+
+            <form id="contact-form" action="https://formsubmit.co/danielamahtoday@gmail.com" method="POST">
+                <input type="text" name="_honey" style="display:none">
+                <input type="hidden" name="_captcha" value="false">
+                <!-- <input type="hidden" name="_next" value="https://akanimohod19a.github.io/thanks.html"> -->
+
                 <label> Name </label>
-                <input class="input-field" type="text" name="name">
+                <input class="input-field" type="text" name="name" required>
 
                 <label> Subject </label>
-                <input class="input-field" type="text" name="subject">
+                <input class="input-field" type="text" name="subject" required>
 
                 <label> Email </label>
-                <input class="input-field" type="text" name="email">
+                <input class="input-field" type="text" name="email" required>
 
                 <label> Message </label>
-                <textarea class="input-field" name="message"></textarea>
-
+                <textarea class="input-field" name="message" required></textarea>
+                
                 <input id="submit-btn" type="submit" value="Send">
             </form>
         </div>
